@@ -1,16 +1,40 @@
 ---
-
+import CostCalculator from "../components/CostCalculator";
+import "../styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Pokecost</title>
+  </head>
+  <body class="bg-gray-950 text-gray-100 min-h-screen">
+    <CostCalculator client:load />
+  </body>
+  <footer
+    class="w-full py-6 text-center text-gray-400 bg-gray-950 border-t border-gray-800 text-sm flex flex-col items-center gap-2"
+  >
+    <div class="flex items-center justify-center gap-2">
+      <a
+        href="https://mmatt.net"
+        class="inline-flex items-center text-blue-400 hover:underline gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span role="img" aria-label="link">🔗</span> mmatt.net
+      </a>
+      <span>|</span>
+      <a
+        href="https://bsky.app/profile/did:plc:tas6hj2xjrqben5653v5kohk"
+        class="inline-flex items-center text-blue-400 hover:underline gap-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span role="img" aria-label="bluesky">🦋</span> @mmatt.net
+      </a>
+    </div>
+  </footer>
 </html>
