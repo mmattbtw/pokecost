@@ -150,6 +150,11 @@ export default function CostCalculator() {
           <span>
             Size: <b>{itemBagBaseline + itemBagSlider * ITEM_BAG_STEP}</b> /{" "}
             {ITEM_BAG_MAX}
+            {itemBagCustomBaseline && (
+              <span className="ml-2 px-2 py-0.5 rounded bg-blue-900 text-blue-200 text-xs font-semibold align-middle">
+                Baseline: {itemBagBaseline}
+              </span>
+            )}
           </span>
         </div>
         <div className="mt-2 text-blue-300 font-medium">
@@ -198,6 +203,11 @@ export default function CostCalculator() {
                 pokemonStorageSlider * POKEMON_STORAGE_STEP}
             </b>{" "}
             / {POKEMON_STORAGE_MAX}
+            {pokemonStorageCustomBaseline && (
+              <span className="ml-2 px-2 py-0.5 rounded bg-blue-900 text-blue-200 text-xs font-semibold align-middle">
+                Baseline: {pokemonStorageBaseline}
+              </span>
+            )}
           </span>
         </div>
         <div className="mt-2 text-green-300 font-medium">
