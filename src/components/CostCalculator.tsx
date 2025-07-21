@@ -222,8 +222,7 @@ export default function CostCalculator() {
         <span className="font-bold">${totalUSD} USD</span>)
       </div>
       <div className="text-xs text-gray-500 text-center mt-2">
-        Bundle: {selectedBundle.label} ({selectedBundle.coins} PokéCoin @ $
-        {selectedBundle.price})
+        Bundle: {selectedBundle.label}
       </div>
     </div>
   );
